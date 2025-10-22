@@ -8,7 +8,7 @@ function ContactForm({ buttonText, username, setUsername }) {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        if (username.trim() === '' || email.trim() === '') {
+        if (username.trim() === '' || useremail.trim() === '') {
             alert('Please fill out both Username and Email fields.');
             return; 
         }
