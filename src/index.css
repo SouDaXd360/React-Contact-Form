@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff; /* Set to white to match your original */
+  color: #333;
+}
+
+.container {
+    width: 750px;
+    /* Set a fixed width for our main content */
+    margin: 40px auto;
+    /* 40px on top/bottom, 'auto' on left/right centers it */
+    padding: 20px;
+    background-color: white;
+    border: 1px solid lightgrey;
+}
+
+main {
+    padding: 20px 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 0px;
+    color: #000000;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: dodgerblue;
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: whitesmoke;
+}
+
+.contact-form {
+    background-color: whitesmoke;
+    padding: 25px;
+    /* Add lots of internal breathing room */
+    border: 1px solid silver;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid silver;
+    margin-bottom: 20px;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: steelblue;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #777;
+}
+
+@media(max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 0px;
+        border: none;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+    h1 {
+        font-size: 36px;
+    }
+}
