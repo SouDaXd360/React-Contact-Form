@@ -17,7 +17,7 @@ function ContactForm({ buttonText, username, setUsername}){
         };
 
         try{
-            const response = await fetch('http://localhost:3001/api/contact',{
+            const response = await fetch('https://soumik-contact-api.onrender.com/api/contact',{
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
